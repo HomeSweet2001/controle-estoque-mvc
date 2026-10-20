@@ -738,6 +738,13 @@ select:focus {
         flex-direction: column;
     }
 
+    /* Em coluna, o flex-basis de 220px do input passaria a ser a ALTURA
+       (deixando o campo gigante). Aqui devolvemos a altura natural. */
+    .form-busca input[type="text"] {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
     .form-busca .botao,
     .form-busca select {
         width: 100%;
